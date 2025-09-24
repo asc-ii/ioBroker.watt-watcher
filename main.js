@@ -8,22 +8,6 @@ const utils = require('@iobroker/adapter-core');
 const DeviceWatcher = require('./lib/devicewatcher');
 const validateDeviceConfig = require('./lib/utils');
 
-/*
-interface DeviceWatcherConfig {
-    name: string;                         // Anzeigename
-    powerStateId: string;                  // z.B. fritzdect.0.DECT_116300369609.power
-    switchStateId: string;                 // z.B. fritzdect.0.DECT_116300369609.state
-    intervalSeconds: number;               // Abtastintervall (z.B. 10)
-    startThresholdWatt: number;            // z.B. 30
-    stopThresholdWatt: number;             // z.B. 5
-    startCounterLimit: number;             // Intervalle > startThreshold für "läuft"
-    stopCounterLimit: number;              // Intervalle < stopThreshold für "fertig"
-    autoOffCounterLimit: number;           // Intervalle bis Auto-Off
-    switchOffAfterFinished: boolean;       // Soll nach Ende abgeschaltet werden?
-    resetDelayMinutes: number;             // Optional: nach wieviel Minuten zurück auf idle
-}
-*/
-
 class WattWatcher extends utils.Adapter {
 	/**
 	 * @param {Partial<utils.AdapterOptions>} [options={}]
