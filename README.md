@@ -23,24 +23,11 @@ By continuously polling the current wattage and applying configurable thresholds
 - Detects start, running, and finished states based on power readings
 - Handles short power drops (e.g. heating pauses in washing machines) with adjustable counters
 - Optional auto-switch-off after a configurable period of inactivity
-- Supports multiple devices with individual settings
 - Creates ioBroker states for status, current power, and timestamps, enabling automations and notifications
 
 **Configurable Parameters**
 
-For each monitored device you can set:
-
-- Device name – a friendly identifier for the appliance
-- Power state ID – the datapoint providing the current wattage
-- Switch state ID – the datapoint to turn the plug on/off (optional)
-- Polling interval (seconds) – how often power data is read
-- Start threshold (W) – minimum power to consider the device “running”
-- Stop threshold (W) – maximum power to consider the device “off/finished”
-- Start counter limit – number of intervals above the start threshold required to confirm start
-- Stop counter limit – number of intervals below the stop threshold required to confirm finish
-- Auto-off counter limit – intervals of inactivity before optional automatic power-off
-- Switch off after finished – enable/disable automatic power cut
-- Reset delay (minutes) – time after which the state resets to idle
+For each monitored device you can set the following parameters.
 
 | Parameter                | Description                                                                                                                   | Example                               |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
