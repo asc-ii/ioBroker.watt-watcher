@@ -1,0 +1,7 @@
+{
+	"General": "General",
+	"Device name": "Device name",
+	"Friendly name for the device (used in state paths and logs).": "Friendly name for the device (used in state paths and logs).",
+	"Power state ID": "Power state ID",
+	"Datapoint that provides the current power usage in watts.": "Datapoint that provides the current power usage in watts."
+}

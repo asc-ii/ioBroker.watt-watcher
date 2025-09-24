@@ -1,0 +1,146 @@
+{
+	"i18n": true,
+	"type": "tabs",
+	"items": {
+		"general": {
+			"type": "panel",
+			"label": "General",
+			"items": {
+				"name": {
+					"type": "text",
+					"label": "Device name",
+					"help": "Friendly name for the device (used in state paths and logs).",
+					"newLine": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				},
+				"powerStateId": {
+					"type": "objectId",
+					"label": "Power state ID",
+					"help": "Datapoint that provides the current power usage in watts.",
+					"newLine": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				},
+				"startThresholdWatt": {
+					"type": "number",
+					"label": "Start threshold (W)",
+					"help": "Power level above which the device is considered running.",
+					"min": 1,
+					"newLine": false,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				},
+				"switchStateId": {
+					"type": "objectId",
+					"label": "Switch state ID",
+					"help": "Datapoint to turn the smart plug on or off. Leave empty if you only want monitoring.",
+					"newLine": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				},
+				"stopThresholdWatt": {
+					"type": "number",
+					"label": "Stop threshold (W)",
+					"help": "Power level below which the device is considered finished.",
+					"min": 0,
+					"newLine": false,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				},
+				"switchOffAfterFinished": {
+					"type": "checkbox",
+					"label": "Switch off after finished",
+					"help": "If enabled, the adapter turns off the plug after the device is finished and the auto-off counter is reached.",
+					"newLine": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				}
+			}
+		},
+		"advanced": {
+			"type": "panel",
+			"label": "Advanced",
+			"items": {
+				"intervalSeconds": {
+					"type": "number",
+					"label": "Polling interval (seconds)",
+					"help": "How often the adapter reads the current power value.",
+					"min": 1,
+					"max": 100,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				},
+				"startCounterLimit": {
+					"type": "number",
+					"label": "Start counter limit",
+					"help": "Number of intervals above the start threshold before the device is marked as running.",
+					"min": 1,
+					"newLine": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				},
+				"stopCounterLimit": {
+					"type": "number",
+					"label": "Stop counter limit",
+					"help": "Number of intervals below the stop threshold before the device is marked as finished.",
+					"min": 1,
+					"newLine": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				},
+				"autoOffCounterLimit": {
+					"type": "number",
+					"label": "Auto-off counter limit",
+					"help": "Number of intervals below the stop threshold before the plug is switched off (if enabled).",
+					"min": 0,
+					"newLine": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				},
+				"resetDelayMinutes": {
+					"type": "number",
+					"label": "Reset delay (minutes)",
+					"help": "Minutes after which the state resets to idle once the plug is off.",
+					"min": 0,
+					"newLine": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				}
+			}
+		}
+	}
+}
