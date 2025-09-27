@@ -1,6 +1,6 @@
 {
   "name": "iobroker.watt-watcher",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Monitors smart-plug power to detect when appliances start and finish.",
   "author": {
     "name": "asc-ii",
