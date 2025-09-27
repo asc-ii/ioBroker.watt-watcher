@@ -50,8 +50,7 @@ The watt-watcher adapter is ideal for automations like push notifications (“Wa
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-
-### **WORK IN PROGRESS**
+### 0.0.1-alpha.0 (2025-09-27)
 
 - (asc-ii) initial release
 

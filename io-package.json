@@ -1,194 +1,215 @@
 {
-	"common": {
-		"name": "watt-watcher",
-		"version": "0.0.0",
-		"news": {
-			"0.0.0": {
-				"en": "initial release",
-				"de": "Erstveröffentlichung",
-				"ru": "Начальная версия",
-				"pt": "lançamento inicial",
-				"nl": "Eerste uitgave",
-				"fr": "Première version",
-				"it": "Versione iniziale",
-				"es": "Versión inicial",
-				"pl": "Pierwsze wydanie",
-				"uk": "Початкова версія",
-				"zh-cn": "首次出版"
-			}
-		},
-		"titleLang": {
-			"en": "watt-watcher",
-			"de": "Wattbeobachter",
-			"ru": "Ватт-наблюдатель",
-			"pt": "Watt-Watcher",
-			"nl": "watt-kijker",
-			"fr": "watt-watcher",
-			"it": "Watt-Watcher",
-			"es": "observador de vatios",
-			"pl": "Watt-Watcher",
-			"uk": "Watt-Watcher",
-			"zh-cn": "瓦特观察者"
-		},
-		"desc": {
-			"en": "Monitors smart-plug power to detect when appliances start and finish.",
-			"de": "Überwacht die Smart-Plug-Leistung, um zu erkennen, wann Geräte beginnen und enden.",
-			"ru": "Мониторирует мощность Smart-Plug для обнаружения при запуске и завершении приборов.",
-			"pt": "Monitora a energia do Smart-Plug para detectar quando os aparelhos começam e terminam.",
-			"nl": "Bewaakt Smart-Plug Power om te detecteren wanneer apparaten beginnen en eindigen.",
-			"fr": "Surveille la puissance intelligente pour détecter le début et la fin des appareils.",
-			"it": "Monitora la potenza della smart-plug per rilevare quando gli apparecchi iniziano e finiscono.",
-			"es": "Monitorea la potencia de plug-smart para detectar cuándo comienzan y terminan los electrodomésticos.",
-			"pl": "Monitoruje moc inteligentną, aby wykryć, gdy urządzenia rozpoczynają się i kończą.",
-			"uk": "Моніторинг розумної потужності для виявлення, коли прилади починаються та закінчуються.",
-			"zh-cn": "监视智能插头的功率，以检测何时启动和完成设备。"
-		},
-		"authors": ["asc-ii <adrian.schyja@gmail.com>"],
-		"keywords": ["iobroker", "iot", "watt", "energy", "monitor"],
-		"licenseInformation": {
-			"type": "free",
-			"license": "MIT"
-		},
-		"platform": "Javascript/Node.js",
-		"icon": "watt-watcher.png",
-		"enabled": true,
-		"extIcon": "https://raw.githubusercontent.com/asc-ii/ioBroker.watt-watcher/main/admin/watt-watcher.png",
-		"readme": "https://github.com/asc-ii/ioBroker.watt-watcher/blob/main/README.md",
-		"loglevel": "info",
-		"tier": 3,
-		"mode": "daemon",
-		"type": "iot-systems",
-		"compact": true,
-		"connectionType": "local",
-		"dataSource": "push",
-		"adminUI": {
-			"config": "json"
-		},
-		"dependencies": [
-			{
-				"js-controller": ">=6.0.11"
-			}
-		],
-		"globalDependencies": [
-			{
-				"admin": ">=7.0.23"
-			}
-		]
-	},
-	"native": {
-		"powerStateId": null,
-		"switchStateId": null,
-		"intervalSeconds": 10,
-		"startThresholdWatt": 30,
-		"stopThresholdWatt": 5,
-		"startCounterLimit": 30,
-		"stopCounterLimit": 15,
-		"autoOffCounterLimit": 60,
-		"switchOffAfterFinished": false,
-		"resetDelayMinutes": 30
-	},
-	"objects": [],
-	"instanceObjects": [
-		{
-			"_id": "currentPower",
-			"type": "state",
-			"common": {
-				"name": {
-					"en": "Current power (W)",
-					"de": "Stromverbrauch (W)",
-					"ru": "Текущее потребление энергии (W)",
-					"pt": "Consumo de energia corrente (W)",
-					"nl": "Huidig energieverbruik (W)",
-					"fr": "Consommation d'énergie actuelle (W)",
-					"it": "Consumo energetico attuale (W)",
-					"es": "Consumo energético actual (W)",
-					"pl": "Bieżące zużycie energii (W)",
-					"uk": "Поточне споживання енергії (В)",
-					"zh-cn": "目前能源消耗(W)"
-				},
-				"type": "number",
-				"role": "value.power",
-				"unit": "W",
-				"read": true,
-				"write": false,
-				"def": false
-			},
-			"native": {}
-		},
-		{
-			"_id": "lastStart",
-			"type": "state",
-			"common": {
-				"name": {
-					"en": "Timestamp of last start",
-					"de": "Zeitstempel des letzten Starts",
-					"ru": "Отметка времени последнего запуска",
-					"pt": "Carimbo de data/hora do último início",
-					"nl": "Tijdstempel van de laatste start",
-					"fr": "Horodatage du dernier démarrage",
-					"it": "Timestamp dell'ultimo avvio",
-					"es": "Marca de tiempo del último inicio",
-					"pl": "Znacznik czasowy ostatniego uruchomienia",
-					"uk": "Час останнього запуску",
-					"zh-cn": "上次启动时间戳"
-				},
-				"type": "number",
-				"role": "value.timestamp",
-				"read": true,
-				"write": false,
-				"def": false
-			},
-			"native": {}
-		},
-		{
-			"_id": "lastEnd",
-			"type": "state",
-			"common": {
-				"name": {
-					"en": "Timestamp of last end",
-					"de": "Zeitstempel des letzten Endes",
-					"ru": "Отметка времени последнего завершения",
-					"pt": "Carimbo de data/hora do último fim",
-					"nl": "Tijdstempel van laatste einde",
-					"fr": "Horodatage de la dernière fin",
-					"it": "Timestamp dell'ultima fine",
-					"es": "Marca de tiempo del último fin",
-					"pl": "Synchronizacja ostatnia znajomość",
-					"uk": "Час завершення останнього запису",
-					"zh-cn": "上一个结束的时间戳"
-				},
-				"type": "number",
-				"role": "value.timestamp",
-				"read": true,
-				"write": false,
-				"def": false
-			},
-			"native": {}
-		},
-		{
-			"_id": "status",
-			"type": "state",
-			"common": {
-				"name": {
-					"en": "Current device state",
-					"de": "Aktueller Gerätezustand",
-					"ru": "Текущее состояние устройства",
-					"pt": "Estado atual do dispositivo",
-					"nl": "Huidige apparaatstatus",
-					"fr": "État actuel du périphérique",
-					"it": "Stato attuale del dispositivo",
-					"es": "Estado actual del dispositivo",
-					"pl": "Aktualny stan urządzenia",
-					"uk": "Поточний стан пристрою.",
-					"zh-cn": "当前设备状态"
-				},
-				"type": "string",
-				"role": "indicator.state",
-				"read": true,
-				"write": false,
-				"def": false
-			},
-			"native": {}
-		}
-	]
+  "common": {
+    "name": "watt-watcher",
+    "version": "0.0.1-alpha.0",
+    "news": {
+      "0.0.1-alpha.0": {
+        "en": "initial release",
+        "de": "erstausstrahlung",
+        "ru": "первоначальное освобождение",
+        "pt": "libertação inicial",
+        "nl": "eerste release",
+        "fr": "libération initiale",
+        "it": "rilascio iniziale",
+        "es": "liberación inicial",
+        "pl": "początkowe zwolnienie",
+        "uk": "початковий реліз",
+        "zh-cn": "初步释放"
+      },
+      "0.0.0": {
+        "en": "initial release",
+        "de": "Erstveröffentlichung",
+        "ru": "Начальная версия",
+        "pt": "lançamento inicial",
+        "nl": "Eerste uitgave",
+        "fr": "Première version",
+        "it": "Versione iniziale",
+        "es": "Versión inicial",
+        "pl": "Pierwsze wydanie",
+        "uk": "Початкова версія",
+        "zh-cn": "首次出版"
+      }
+    },
+    "titleLang": {
+      "en": "watt-watcher",
+      "de": "Wattbeobachter",
+      "ru": "Ватт-наблюдатель",
+      "pt": "Watt-Watcher",
+      "nl": "watt-kijker",
+      "fr": "watt-watcher",
+      "it": "Watt-Watcher",
+      "es": "observador de vatios",
+      "pl": "Watt-Watcher",
+      "uk": "Watt-Watcher",
+      "zh-cn": "瓦特观察者"
+    },
+    "desc": {
+      "en": "Monitors smart-plug power to detect when appliances start and finish.",
+      "de": "Überwacht die Smart-Plug-Leistung, um zu erkennen, wann Geräte beginnen und enden.",
+      "ru": "Мониторирует мощность Smart-Plug для обнаружения при запуске и завершении приборов.",
+      "pt": "Monitora a energia do Smart-Plug para detectar quando os aparelhos começam e terminam.",
+      "nl": "Bewaakt Smart-Plug Power om te detecteren wanneer apparaten beginnen en eindigen.",
+      "fr": "Surveille la puissance intelligente pour détecter le début et la fin des appareils.",
+      "it": "Monitora la potenza della smart-plug per rilevare quando gli apparecchi iniziano e finiscono.",
+      "es": "Monitorea la potencia de plug-smart para detectar cuándo comienzan y terminan los electrodomésticos.",
+      "pl": "Monitoruje moc inteligentną, aby wykryć, gdy urządzenia rozpoczynają się i kończą.",
+      "uk": "Моніторинг розумної потужності для виявлення, коли прилади починаються та закінчуються.",
+      "zh-cn": "监视智能插头的功率，以检测何时启动和完成设备。"
+    },
+    "authors": [
+      "asc-ii <adrian.schyja@gmail.com>"
+    ],
+    "keywords": [
+      "iobroker",
+      "iot",
+      "watt",
+      "energy",
+      "monitor"
+    ],
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    },
+    "platform": "Javascript/Node.js",
+    "icon": "watt-watcher.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/asc-ii/ioBroker.watt-watcher/main/admin/watt-watcher.png",
+    "readme": "https://github.com/asc-ii/ioBroker.watt-watcher/blob/main/README.md",
+    "loglevel": "info",
+    "tier": 3,
+    "mode": "daemon",
+    "type": "iot-systems",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "push",
+    "adminUI": {
+      "config": "json"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.0.23"
+      }
+    ]
+  },
+  "native": {
+    "powerStateId": null,
+    "switchStateId": null,
+    "intervalSeconds": 10,
+    "startThresholdWatt": 30,
+    "stopThresholdWatt": 5,
+    "startCounterLimit": 30,
+    "stopCounterLimit": 15,
+    "autoOffCounterLimit": 60,
+    "switchOffAfterFinished": false,
+    "resetDelayMinutes": 30
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "currentPower",
+      "type": "state",
+      "common": {
+        "name": {
+          "en": "Current power (W)",
+          "de": "Stromverbrauch (W)",
+          "ru": "Текущее потребление энергии (W)",
+          "pt": "Consumo de energia corrente (W)",
+          "nl": "Huidig energieverbruik (W)",
+          "fr": "Consommation d'énergie actuelle (W)",
+          "it": "Consumo energetico attuale (W)",
+          "es": "Consumo energético actual (W)",
+          "pl": "Bieżące zużycie energii (W)",
+          "uk": "Поточне споживання енергії (В)",
+          "zh-cn": "目前能源消耗(W)"
+        },
+        "type": "number",
+        "role": "value.power",
+        "unit": "W",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "lastStart",
+      "type": "state",
+      "common": {
+        "name": {
+          "en": "Timestamp of last start",
+          "de": "Zeitstempel des letzten Starts",
+          "ru": "Отметка времени последнего запуска",
+          "pt": "Carimbo de data/hora do último início",
+          "nl": "Tijdstempel van de laatste start",
+          "fr": "Horodatage du dernier démarrage",
+          "it": "Timestamp dell'ultimo avvio",
+          "es": "Marca de tiempo del último inicio",
+          "pl": "Znacznik czasowy ostatniego uruchomienia",
+          "uk": "Час останнього запуску",
+          "zh-cn": "上次启动时间戳"
+        },
+        "type": "number",
+        "role": "value.timestamp",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "lastEnd",
+      "type": "state",
+      "common": {
+        "name": {
+          "en": "Timestamp of last end",
+          "de": "Zeitstempel des letzten Endes",
+          "ru": "Отметка времени последнего завершения",
+          "pt": "Carimbo de data/hora do último fim",
+          "nl": "Tijdstempel van laatste einde",
+          "fr": "Horodatage de la dernière fin",
+          "it": "Timestamp dell'ultima fine",
+          "es": "Marca de tiempo del último fin",
+          "pl": "Synchronizacja ostatnia znajomość",
+          "uk": "Час завершення останнього запису",
+          "zh-cn": "上一个结束的时间戳"
+        },
+        "type": "number",
+        "role": "value.timestamp",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "status",
+      "type": "state",
+      "common": {
+        "name": {
+          "en": "Current device state",
+          "de": "Aktueller Gerätezustand",
+          "ru": "Текущее состояние устройства",
+          "pt": "Estado atual do dispositivo",
+          "nl": "Huidige apparaatstatus",
+          "fr": "État actuel du périphérique",
+          "it": "Stato attuale del dispositivo",
+          "es": "Estado actual del dispositivo",
+          "pl": "Aktualny stan urządzenia",
+          "uk": "Поточний стан пристрою.",
+          "zh-cn": "当前设备状态"
+        },
+        "type": "string",
+        "role": "indicator.state",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "iobroker.watt-watcher",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "description": "Monitors smart-plug power to detect when appliances start and finish.",
   "author": {
     "name": "asc-ii",
@@ -46,7 +46,7 @@
     "www/",
     "io-package.json",
     "LICENSE",
-    "main.js" 
+    "main.js"
   ],
   "scripts": {
     "test:js": "mocha --config test/mocharc.custom.json \"{!(node_modules|test)/**/*.test.js,*.test.js,test/**/test!(PackageFiles|Startup).js}\"",
