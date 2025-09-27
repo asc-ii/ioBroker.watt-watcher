@@ -43,8 +43,16 @@
 			"uk": "Моніторинг розумної потужності для виявлення, коли прилади починаються та закінчуються.",
 			"zh-cn": "监视智能插头的功率，以检测何时启动和完成设备。"
 		},
-		"authors": ["asc-ii <adrian.schyja@gmail.com>"],
-		"keywords": ["iobroker", "iot", "watt", "energy", "monitor"],
+		"authors": [
+			"asc-ii <adrian.schyja@gmail.com>"
+		],
+		"keywords": [
+			"iobroker",
+			"iot",
+			"watt",
+			"energy",
+			"monitor"
+		],
 		"licenseInformation": {
 			"type": "free",
 			"license": "MIT"

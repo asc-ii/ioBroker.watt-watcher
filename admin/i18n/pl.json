@@ -1,5 +1,26 @@
 {
+	"Advanced": "Zaawansowany",
+	"Auto-off counter limit": "Auto-off Limit",
 	"Datapoint that provides the current power usage in watts.": "Punkt danych, który zapewnia bieżące wykorzystanie mocy w WATTS.",
+	"Datapoint to turn the smart plug on or off. Leave empty if you only want monitoring.": "Punkt danych, aby włączyć lub wyłączyć inteligentną wtyczkę. Pozostaw pusty, jeśli chcesz tylko monitorowanie.",
+	"Device name": "Nazwa urządzenia",
+	"Friendly name for the device (used in state paths and logs).": "Przyjazna nazwa urządzenia (używana w ścieżkach i dziennikach stanu).",
 	"General": "Ogólny",
-	"Power state ID": "Identyfikator stanu mocy"
+	"How often the adapter reads the current power value.": "Jak często adapter odczytuje bieżącą wartość mocy.",
+	"If enabled, the adapter turns off the plug after the device is finished and the auto-off counter is reached.": "Jeśli jest włączony, adapter wyłącza wtyczkę po zakończeniu urządzenia i osiągnięciu licznika automatycznego wyłączenia.",
+	"Minutes after which the state resets to idle once the plug is off.": "Minuty, po których stan resetuje się na biegu jałowym po wyłączeniu wtyczki.",
+	"Number of intervals above the start threshold before the device is marked as running.": "Liczba przedziałów powyżej progu startowego przed oznaczeniem urządzenia jako działającego.",
+	"Number of intervals below the stop threshold before the device is marked as finished.": "Liczba interwałów poniżej progu stop przed oznaczeniem urządzenia jako zakończonym.",
+	"Number of intervals below the stop threshold before the plug is switched off (if enabled).": "Liczba przedziałów poniżej progu stop przed wyłączeniem wtyczki (jeśli jest włączona).",
+	"Polling interval (seconds)": "Interwał wyborczy (sekundy)",
+	"Power level above which the device is considered running.": "Poziom mocy powyżej którego urządzenie uważa się za działające.",
+	"Power level below which the device is considered finished.": "Poziom mocy poniżej którego urządzenie jest uważane za zakończone.",
+	"Power state ID": "Identyfikator stanu mocy",
+	"Reset delay (minutes)": "Resetować opóźnienie (minuty)",
+	"Start counter limit": "Rozpocznij limit licznika",
+	"Start threshold (W)": "Start próg (w)",
+	"Stop counter limit": "Zatrzymaj limit licznika",
+	"Stop threshold (W)": "Stop Próg (W)",
+	"Switch off after finished": "Wyłącz po zakończeniu",
+	"Switch state ID": "Przełącz identyfikator stanu"
 }

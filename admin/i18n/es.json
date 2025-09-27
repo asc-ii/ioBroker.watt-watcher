@@ -1,5 +1,26 @@
 {
+	"Advanced": "Avanzado",
+	"Auto-off counter limit": "Límite de mostrador automático",
 	"Datapoint that provides the current power usage in watts.": "DataPoint que proporciona el uso actual de energía en Watts.",
+	"Datapoint to turn the smart plug on or off. Leave empty if you only want monitoring.": "DataPoint para activar o desactivar el enchufe inteligente. Deje vacío si solo desea monitoreo.",
+	"Device name": "Nombre del dispositivo",
+	"Friendly name for the device (used in state paths and logs).": "Nombre amigable para el dispositivo (utilizado en rutas y registros de estado).",
 	"General": "General",
-	"Power state ID": "ID de estado de poder"
+	"How often the adapter reads the current power value.": "Con qué frecuencia el adaptador lee el valor de potencia actual.",
+	"If enabled, the adapter turns off the plug after the device is finished and the auto-off counter is reached.": "Si está habilitado, el adaptador apaga el enchufe después de que el dispositivo esté terminado y se alcanza el contador automático.",
+	"Minutes after which the state resets to idle once the plug is off.": "Minutos después de lo cual el estado se restablece al ralentí una vez que el enchufe está apagado.",
+	"Number of intervals above the start threshold before the device is marked as running.": "Número de intervalos por encima del umbral de inicio antes de que el dispositivo esté marcado como en ejecución.",
+	"Number of intervals below the stop threshold before the device is marked as finished.": "Número de intervalos por debajo del umbral de parada antes de que el dispositivo esté marcado como terminado.",
+	"Number of intervals below the stop threshold before the plug is switched off (if enabled).": "Número de intervalos por debajo del umbral de parada antes de que el enchufe esté apagado (si está habilitado).",
+	"Polling interval (seconds)": "Intervalo de votación (segundos)",
+	"Power level above which the device is considered running.": "Nivel de potencia por encima del cual se considera el dispositivo en ejecución.",
+	"Power level below which the device is considered finished.": "Nivel de potencia por debajo del cual se considera el dispositivo terminado.",
+	"Power state ID": "ID de estado de poder",
+	"Reset delay (minutes)": "RESET DEL ALTACIÓN (minutos)",
+	"Start counter limit": "Iniciar límite de contador",
+	"Start threshold (W)": "Umbral de inicio (W)",
+	"Stop counter limit": "Detener el límite de contador",
+	"Stop threshold (W)": "Umbral de parada (w)",
+	"Switch off after finished": "Apagar después de terminar",
+	"Switch state ID": "ID de estado de cambio"
 }

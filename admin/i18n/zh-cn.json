@@ -1,5 +1,26 @@
 {
+	"Advanced": "先进的",
+	"Auto-off counter limit": "自动关闭计数器限制",
 	"Datapoint that provides the current power usage in watts.": "在瓦特中提供当前功率使用的数据点。",
+	"Datapoint to turn the smart plug on or off. Leave empty if you only want monitoring.": "datapoint以打开或关闭智能插件。如果您只想监视，请留空。",
+	"Device name": "设备名称",
+	"Friendly name for the device (used in state paths and logs).": "设备的友好名称（用于状态路径和日志）。",
 	"General": "一般的",
-	"Power state ID": "电源状态ID"
+	"How often the adapter reads the current power value.": "适配器多久读取当前功率值。",
+	"If enabled, the adapter turns off the plug after the device is finished and the auto-off counter is reached.": "如果启用了，则在设备完成后，将适配器关闭插头，并达到自动关闭计数器。",
+	"Minutes after which the state resets to idle once the plug is off.": "几分钟之后，一旦插头关闭，状态将重置为空闲。",
+	"Number of intervals above the start threshold before the device is marked as running.": "在将设备标记为运行之前的启动阈值之上的间隔数。",
+	"Number of intervals below the stop threshold before the device is marked as finished.": "在将设备标记为完成之前的停止阈值以下的间隔数。",
+	"Number of intervals below the stop threshold before the plug is switched off (if enabled).": "在关闭插头之前的停止阈值以下的间隔数（如果启用）。",
+	"Polling interval (seconds)": "投票间隔（秒）",
+	"Power level above which the device is considered running.": "功率水平在该功率水平上考虑该设备运行。",
+	"Power level below which the device is considered finished.": "电源水平在该设备之下被视为完成。",
+	"Power state ID": "电源状态ID",
+	"Reset delay (minutes)": "重置延迟（分钟）",
+	"Start counter limit": "启动计数器限制",
+	"Start threshold (W)": "开始阈值（W）",
+	"Stop counter limit": "停止计数器限制",
+	"Stop threshold (W)": "停止阈值（W）",
+	"Switch off after finished": "完成后关闭",
+	"Switch state ID": "开关状态ID"
 }

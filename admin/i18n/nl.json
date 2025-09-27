@@ -1,5 +1,26 @@
 {
+	"Advanced": "Geavanceerd",
+	"Auto-off counter limit": "Auto-off tellerlimiet",
 	"Datapoint that provides the current power usage in watts.": "Datapoint dat het huidige stroomgebruik in Watts biedt.",
+	"Datapoint to turn the smart plug on or off. Leave empty if you only want monitoring.": "Datapoint om de slimme plug in of uit te zetten. Laat leeg als u alleen maar wilt monitoren.",
+	"Device name": "Apparaatnaam",
+	"Friendly name for the device (used in state paths and logs).": "Vriendelijke naam voor het apparaat (gebruikt in statuspaden en logboeken).",
 	"General": "Algemeen",
-	"Power state ID": "Power State ID"
+	"How often the adapter reads the current power value.": "Hoe vaak leest de adapter de huidige stroomwaarde.",
+	"If enabled, the adapter turns off the plug after the device is finished and the auto-off counter is reached.": "Indien ingeschakeld, schakelt de adapter de stekker uit nadat het apparaat is voltooid en de auto-off-teller is bereikt.",
+	"Minutes after which the state resets to idle once the plug is off.": "Minuten waarna de toestand wordt gereset om te stationair worden zodra de stekker is uitgeschakeld.",
+	"Number of intervals above the start threshold before the device is marked as running.": "Aantal intervallen boven de startdrempel voordat het apparaat wordt gemarkeerd als actief.",
+	"Number of intervals below the stop threshold before the device is marked as finished.": "Aantal intervallen onder de stopdrempel voordat het apparaat wordt gemarkeerd als voltooid.",
+	"Number of intervals below the stop threshold before the plug is switched off (if enabled).": "Aantal intervallen onder de stopdrempel voordat de stekker wordt uitgeschakeld (indien ingeschakeld).",
+	"Polling interval (seconds)": "Steminterval (seconden)",
+	"Power level above which the device is considered running.": "Stroomniveau waarboven het apparaat wordt beschouwd als actief.",
+	"Power level below which the device is considered finished.": "Stroomniveau waaronder het apparaat wordt beschouwd als voltooid.",
+	"Power state ID": "Power State ID",
+	"Reset delay (minutes)": "Reset vertraging (minuten)",
+	"Start counter limit": "Start de tegengrens",
+	"Start threshold (W)": "Start drempel (W)",
+	"Stop counter limit": "Stop tegengrens",
+	"Stop threshold (W)": "Stop drempel (W)",
+	"Switch off after finished": "Schakel uit na klaar",
+	"Switch state ID": "Schakel State ID"
 }

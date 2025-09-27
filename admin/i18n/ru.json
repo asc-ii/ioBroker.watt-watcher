@@ -1,5 +1,26 @@
 {
+	"Advanced": "Передовой",
+	"Auto-off counter limit": "Автоматическое ограничение счетчика",
 	"Datapoint that provides the current power usage in watts.": "DataPoint, который обеспечивает текущее использование питания в ваттах.",
+	"Datapoint to turn the smart plug on or off. Leave empty if you only want monitoring.": "DataPoint, чтобы выключить или выключить Smart Plug. Оставьте пустым, если вы хотите контролировать.",
+	"Device name": "Название устройства",
+	"Friendly name for the device (used in state paths and logs).": "Дружелюбное название для устройства (используется в пути и журналах состояния).",
 	"General": "Общий",
-	"Power state ID": "Идентификатор состояния власти"
+	"How often the adapter reads the current power value.": "Как часто адаптер читает текущее значение мощности.",
+	"If enabled, the adapter turns off the plug after the device is finished and the auto-off counter is reached.": "Если включено, адаптер выключает пробку после завершения устройства и достигнут счетчик автоматического офф.",
+	"Minutes after which the state resets to idle once the plug is off.": "Через несколько минут, после чего государство сбрасывается на холостое время после выключения вилки.",
+	"Number of intervals above the start threshold before the device is marked as running.": "Количество интервалов выше порога начала до того, как устройство будет помечено как работа.",
+	"Number of intervals below the stop threshold before the device is marked as finished.": "Количество интервалов ниже порога остановки до того, как устройство помечено как законченное.",
+	"Number of intervals below the stop threshold before the plug is switched off (if enabled).": "Количество интервалов ниже порога остановки до выключения пробки (если включено).",
+	"Polling interval (seconds)": "Интервал опроса (секунды)",
+	"Power level above which the device is considered running.": "Уровень мощности выше, чем устройство считается запущенным.",
+	"Power level below which the device is considered finished.": "Уровень мощности, ниже которого устройство считается законченным.",
+	"Power state ID": "Идентификатор состояния власти",
+	"Reset delay (minutes)": "Сбросить задержку (минуты)",
+	"Start counter limit": "Начало ограничения счетчика",
+	"Start threshold (W)": "Начало порога (w)",
+	"Stop counter limit": "Остановить счетчик счетчика",
+	"Stop threshold (W)": "Порог остановки (w)",
+	"Switch off after finished": "Выключить после завершения",
+	"Switch state ID": "Переключить идентификатор состояния"
 }

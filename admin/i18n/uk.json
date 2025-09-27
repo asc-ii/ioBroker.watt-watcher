@@ -1,5 +1,26 @@
 {
+	"Advanced": "Просунутий",
+	"Auto-off counter limit": "Ліміт лічильника автоматичного",
 	"Datapoint that provides the current power usage in watts.": "Datapoint, який забезпечує поточне використання потужності у Ваттс.",
+	"Datapoint to turn the smart plug on or off. Leave empty if you only want monitoring.": "DataPap, щоб увімкнути або вимкнути Smart Plug. Залиште порожній, якщо ви хочете лише моніторинг.",
+	"Device name": "Назва пристрою",
+	"Friendly name for the device (used in state paths and logs).": "Дружнє ім’я для пристрою (використовується в державних шляхах та журналах).",
 	"General": "Загальний",
-	"Power state ID": "Ідентифікатор потужності"
+	"How often the adapter reads the current power value.": "Як часто адаптер читає поточне значення потужності.",
+	"If enabled, the adapter turns off the plug after the device is finished and the auto-off counter is reached.": "Якщо ввімкнено, адаптер вимикає вилку після закінчення пристрою та досягнуто лічильника автоматичного офісу.",
+	"Minutes after which the state resets to idle once the plug is off.": "Хвилини, після яких держава скидається на непрацюючі після вимкнення вилки.",
+	"Number of intervals above the start threshold before the device is marked as running.": "Кількість інтервалів над порігом запуску до позначення пристрою як запуску.",
+	"Number of intervals below the stop threshold before the device is marked as finished.": "Кількість інтервалів нижче порогу зупинки до того, як пристрій позначено як закінчене.",
+	"Number of intervals below the stop threshold before the plug is switched off (if enabled).": "Кількість інтервалів нижче порогу зупинки до вимкнення вилки (якщо увімкнено).",
+	"Polling interval (seconds)": "Інтервал опитування (секунди)",
+	"Power level above which the device is considered running.": "Рівень живлення, над яким пристрій вважається запущеним.",
+	"Power level below which the device is considered finished.": "Рівень живлення, нижче якого пристрій вважається закінченим.",
+	"Power state ID": "Ідентифікатор потужності",
+	"Reset delay (minutes)": "Скидання затримки (хвилини)",
+	"Start counter limit": "Розпочати ліміт лічильника",
+	"Start threshold (W)": "Почніть поріг (W)",
+	"Stop counter limit": "Зупиніть ліміт ліміту",
+	"Stop threshold (W)": "Зупиніть поріг (W)",
+	"Switch off after finished": "Вимкніть після закінчення",
+	"Switch state ID": "Переключити ідентифікатор стану"
 }

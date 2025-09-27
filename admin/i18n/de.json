@@ -1,5 +1,26 @@
 {
-	"Datapoint that provides the current power usage in watts.": "DataPoint, der den aktuellen Stromverbrauch in Watts liefert.",
+	"Advanced": "Fortgeschritten",
+	"Auto-off counter limit": "Auto-Off-Zählergrenze",
+	"Datapoint that provides the current power usage in watts.": "Datenpunkt, der den aktuellen Stromverbrauch in Watts liefert.",
+	"Datapoint to turn the smart plug on or off. Leave empty if you only want monitoring.": "Datenpunkt zum ein- oder auszuschalten der Steckdosen. Leer, wenn nur eine Überwachung gewünscht wird.",
+	"Device name": "Gerätename",
+	"Friendly name for the device (used in state paths and logs).": "Name für das Gerät (verwendet in Status und Logmeldungen).",
 	"General": "Allgemein",
-	"Power state ID": "Power -Status -ID"
+	"How often the adapter reads the current power value.": "Wie oft liest der Adapter den aktuellen Leistungswert.",
+	"If enabled, the adapter turns off the plug after the device is finished and the auto-off counter is reached.": "Wenn es aktiviert ist, schaltet der Adapter den Stecker nach Abschluss des Geräts aus und der Auto-Off-Schalter ist erreicht.",
+	"Minutes after which the state resets to idle once the plug is off.": "Minuten danach wird der Staat auf Leerlauf zurückgesetzt, sobald der Stecker ausgeschaltet ist.",
+	"Number of intervals above the start threshold before the device is marked as running.": "Anzahl der Intervalle über dem Startschwellenwert, bevor das Gerät als ausgeführt markiert wird.",
+	"Number of intervals below the stop threshold before the device is marked as finished.": "Anzahl der Intervalle unter dem Stoppschwellenwert, bevor das Gerät als fertig markiert wird.",
+	"Number of intervals below the stop threshold before the plug is switched off (if enabled).": "Anzahl der Intervalle unter dem Stoppschwellenwert, bevor der Stecker ausgeschaltet ist (falls aktiviert).",
+	"Polling interval (seconds)": "Abtast-Intervall (Sekunden)",
+	"Power level above which the device is considered running.": "Über dieser Leistung gilt das Gerät als in Betrieb.",
+	"Power level below which the device is considered finished.": "Über dieser Leistung gilt das Gerät als nicht mehr in Betrieb.",
+	"Power state ID": "Power-Status-ID",
+	"Reset delay (minutes)": "Verzögerung zum Zurücksetzen (Minuten)",
+	"Start counter limit": "Zählergrenze für Start",
+	"Start threshold (W)": "Startschwelle (Watt)",
+	"Stop counter limit": "Zählergrenze für Stop",
+	"Stop threshold (W)": "Schwelle stoppen (watt)",
+	"Switch off after finished": "Nach Abschluss ausschalten",
+	"Switch state ID": "Switch Status ID"
 }
